@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wall</title>
+</head>
+
+<body>
+
+  <h1>CodingDojo Wall</h1>
+  <h1>Hello {{request.session.first_name}}</h1>
+  <a href="/users/logout">Log Out</a>
+  <br>
+  <br>
+  <form action="/users/add_message" method="POST">
+    {% csrf_token %}
+    <textarea name="add_message" cols="30" rows="10"></textarea>
+    <br>
+    <br>
+
+    <input type="submit" value="Post Message">
+  </form>
+
+  <h3>Wall Messages:</h3>
+  {% if post_data %}
+  {% for post in post_data reversed %}
+  <fieldset>
+
+    <h3>{{ post.user.first_name }} - {{ post.created_at }}</h3>
+    <p>{{ post.message }}</p>
+
+
+    {% if post.user.id == request.session.user_id %}
+    <a href="/users/delete/{{post.id}}">Delete</a>
+    {% endif %}
+
+
+    <h3>Comments:</h3>
+
+
+    {%if comment_data%}
+    {% for comment in comment_data reversed%}
+    <ul>
+      {% if comment.message.id == post.id %}
+      <li>{{ comment.user.first_name }}: {{comment.comment}} - {{ comment.created_at}}</li>
+      {% endif %}
+    </ul>
+    {% endfor %}
+    {% endif %}
+
+
+    <form action="/users/add_comment" method='POST'>
+      {% csrf_token %}
+      <p>Post a comment:</p>
+      <input type="hidden" value={{post.id}} name="message_ID">
+      <textarea name="add_comment" cols="30" rows="10"></textarea>
+      <br>
+      <br>
+
+      <input type="submit" value='Comment'>
+    </form>
+
+
+  </fieldset>
+  {% endfor %}
+  {% endif %}
+
+
+
+
+</body>
+
+</html>

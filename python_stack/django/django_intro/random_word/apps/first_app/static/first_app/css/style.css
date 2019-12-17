@@ -1,0 +1,30 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  vertical-align: top;
+  /* outline: 1px dotted red; */
+}
+main{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+}
+p{
+  text-align: center;
+}
+h1{
+  border: 2px solid black;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 37pt;
+  padding: 15px;
+  height: 100px;
+}
+form{
+  text-align: center;
+}
+input{
+  font-size: 24pt;
+}

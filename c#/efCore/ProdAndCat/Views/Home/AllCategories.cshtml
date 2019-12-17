@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Category
+
+<h1><a asp-action="AllProducts">Products</a> | <a asp-action="AllCategories">Categories</a></h1>
+
+<br>
+<br>
+
+<h3>New Category</h3>
+<div asp-validation-summary="All"></div>
+
+<br>
+
+<form asp-action="CreateCat" asp-controller="Home" method="post">
+  <label asp-for="Name"></label>
+  <input asp-for="Name">
+  <br>
+  <br>
+  <input type="submit" value="Create" class="btn btn-success">
+</form>
+
+<br>
+<br>
+
+<h3>Existing Categories</h3>
+<ul>
+  @{
+    foreach(var cat in @ViewBag.AllCats)
+    {
+      <a asp-action="DispCats" asp-controller="Home" asp-route-cat_id="@cat.CategoryId"><li>@cat.Name</li></a>
+    }
+  }
+</ul>

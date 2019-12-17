@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model User
+<h1>Register</h1>
+<br>
+<a asp-action="SignIn" asp-controller = "Home" class="btn btn-warning">Sign In</a>
+<br>
+<br>
+<div asp-validation-summary="All" class="text-danger"></div>
+<form asp-action="Register" asp-controller = "Home" method = "post">
+    <label asp-for="FirstName"></label>
+    <input asp-for="FirstName">
+    <br>
+    <br>
+    <label asp-for="LastName"></label>
+    <input asp-for="LastName">
+    <br>
+    <br>
+    <label asp-for="Email"></label>
+    <input asp-for="Email">
+    <br>
+    <br>
+    <label asp-for="Password"></label>
+    <input asp-for="Password">
+    <br>
+    <br>
+    <label asp-for="ComparePassword"></label>
+    <input asp-for="ComparePassword">
+    <br>
+    <br>
+    <input type="submit" value = "Register!" class="btn btn-danger">
+</form>

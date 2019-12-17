@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Atmos</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+  <script src="{% static 'main/js/skycons.js' %}"></script>
+  <script src="{% static 'main/js/script.js' %}"></script>
+</head>
+
+<body>
+  <div id='container'>
+
+
+    <header>Hello, ###! Here's what your day looks like.</header>
+
+    <div id='weatherapp'>
+      <div class='location'>
+        <h1 class='tz'></h1>
+        <canvas class='icon' width="128" height="128"></canvas>
+      </div>
+      <div class="temperature">
+        <div class='degsec'>
+          <h2 class='degree'></h2>
+          <p>F °</p>
+        </div>
+        <p class='tempdesc'></p>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

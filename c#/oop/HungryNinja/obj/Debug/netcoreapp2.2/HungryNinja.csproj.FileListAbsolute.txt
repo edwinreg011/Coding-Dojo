@@ -1,0 +1,11 @@
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/HungryNinja/bin/Debug/netcoreapp2.2/HungryNinja.deps.json
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/HungryNinja/bin/Debug/netcoreapp2.2/HungryNinja.runtimeconfig.json
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/HungryNinja/bin/Debug/netcoreapp2.2/HungryNinja.runtimeconfig.dev.json
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/HungryNinja/bin/Debug/netcoreapp2.2/HungryNinja.dll
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/HungryNinja/bin/Debug/netcoreapp2.2/HungryNinja.pdb
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.csprojAssemblyReference.cache
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.csproj.CoreCompileInputs.cache
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.AssemblyInfoInputs.cache
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.AssemblyInfo.cs
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.dll
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.pdb

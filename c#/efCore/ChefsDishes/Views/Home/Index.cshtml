@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using ChefsDishes.Models
+
+<h1><a asp-action="Index">Chefs</a> | <a asp-action="DispDishes">Dishes</a></h1>
+
+<a asp-action="ChefForm">Add a Chef!</a>
+
+<h2>Check out our roster of Chefs!</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th># of Dishes</th>
+            </tr>
+        </thead>
+        <tbody>
+            @model List<Chef>
+            
+            @foreach(var x in @Model)
+            {
+            <tr>
+                <td>@x.FirstName @x.LastName</td>
+                <td>@x.Age</td>
+                <td>@x.CreatedDishes.Count</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+
+

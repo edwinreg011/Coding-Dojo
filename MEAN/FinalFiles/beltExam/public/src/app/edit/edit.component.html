@@ -1,0 +1,43 @@
+<h1>Pet Shelter</h1>
+<h4>Edit this pet</h4>
+
+<br>
+
+<div *ngFor="let err of errors">
+    <p>{{err}}</p>
+</div>
+
+<br>
+
+<form (submit)="updatePet()">
+    <br>
+    <label>Pet name: </label>
+    <input type="text" name="editPet.name" [(ngModel)]="editPet.name">
+    <br>
+    <br>
+    <label>Pet type: </label>
+    <input type="text" name="editPet.type" [(ngModel)]="editPet.type">
+    <br>
+    <br>
+    <label>Description: </label>
+    <input type="text" name="editPet.description" [(ngModel)]="editPet.description">
+    <br>
+    <br>
+    <h5>Skills: </h5>
+    <label>Skill 1: </label>
+    <input type="text" name="editPet.skill1" [(ngModel)]="editPet.skill1">
+    <br>
+    <br>
+    <label>Skill 2: </label>
+    <input type="text" name="editPet.skill2" [(ngModel)]="editPet.skill2">
+    <br>
+    <br>
+    <label>Skill 3: </label>
+    <input type="text" name="editPet.skill3" [(ngModel)]="editPet.skill3">
+    <br>
+    <br>
+    <input type="submit" value="Edit Pet">
+    <br>
+    <br>
+    <button [routerLink]="['/pets', editPet._id]">Cancel</button>
+  </form>

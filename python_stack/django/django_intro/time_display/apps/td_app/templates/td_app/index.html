@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'td_app/css/style.css' %}">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id='container'>
+    <div id='head'>
+      <h1>The current date and time:</h1>
+    </div>
+
+    <br>
+    <br>
+    <div id="display">
+      <p class='date'>{{ date }}</p>
+      <br>
+      <br>
+      <p class="time">{{ time }}</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+@model Meeting
+
+<h1>Dojo Activity Center</h1>
+<a asp-action="LogOut" asp-controller="Home" class="btn btn-danger">Log Out</a>
+<a asp-action="Dashboard" asp-controller="Home" class="btn btn-warning">Home</a>
+
+<br>
+<br>
+
+<h2>Create an Activity</h2>
+
+<div asp-validation-summary="All"></div>
+
+<form asp-action="Create" asp-controller="Home" method="post">
+  <label asp-for="Name">Title</label>
+  <input asp-for="Name">
+  <br>
+  <br>
+  <label asp-for="Date"></label>
+  <input asp-for="Date" type="Date">
+  <br>
+  <br>
+  <label asp-for="Time"></label>
+  <input asp-for="Time" type="time">
+  <br>
+  <br>
+  <label asp-for="Duration"></label>
+  <input asp-for="Duration">
+  <br>
+  <small>(Please make sure to specify minutes, <br>hours, days. Ex: 40 minutes, 1 hour, 5 days.)</small>
+  <br>
+  <br>
+  <label asp-for="Description">Description</label>
+  <br>
+  <textarea asp-for="Description" cols="30" rows="10"></textarea>
+  <br>
+  <br>
+  <input type="hidden" asp-for="UserId" value="@ViewBag.User.UserId">
+  <input type="submit" value="Create Activity" class="btn btn-success">
+</form>

@@ -1,0 +1,55 @@
+@model CRUDelicious.Models.Dish
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="container">
+  <a asp-action="Index">Home</a>
+  <h1>Add a new Dish!</h1>
+  <div asp-validation-summary="All"></div>
+
+
+  <form asp-action="AddDish" asp-controller="Home" method="Post">
+  <label asp-for="Chef">Chef's Name:</label>
+  <input asp-for="Chef">
+    <br>
+    <br>
+  <label asp-for="Name">Name of Dish: </label>
+  <input asp-for="Name">
+    <br>
+    <br>
+  <label asp-for="Calories"># of Calories: </label>
+  <input asp-for="Calories">
+    <br>
+    <br>
+  <label for="Tastiness">Tastiness:</label>
+  <select asp-for="Tastiness">
+    <option value="">--</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+  <br>
+  <br>
+  <label asp-for="Description">Description: </label>
+  <br>
+  <textarea asp-for="Description" cols="30" rows="10"></textarea>
+  <br>
+  <br>
+  <input type="submit" value="Add Dish!">
+  </form>
+</div>
+</body>
+</html>

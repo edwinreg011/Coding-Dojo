@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: top;
+  outline: 1px dashed red; 
+}
+
+#container{
+  width: 970px;
+  margin: 0 auto;
+}

@@ -1,0 +1,34 @@
+@using CRUDelicious.Models
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="container">
+  <a asp-action="Index">Home</a>
+  <h1>@ViewBag.dispDish.Name</h1>
+  <br>
+  <br>
+  <h3>@ViewBag.dispDish.Chef</h3>
+  <br>
+  <br>
+  <p>@ViewBag.dispDish.Description</p>
+  <br>
+  <br>
+  <p>Calories: @ViewBag.dispDish.Calories</p>
+  <br>
+  <br>
+  <p>Tastiness: @ViewBag.dispDish.Tastiness</p>
+  <br>
+  <br>
+  <a asp-action="UpdateView" asp-route-dish_id="@ViewBag.dispDish.DishId" asp-controller="Home">Edit</a>
+  <br>
+  <br>
+  <a asp-action="Remove" asp-route-dish_id="@ViewBag.dispDish.DishId" asp-controller="Home">Delete</a>
+</div>
+</body>
+</html>

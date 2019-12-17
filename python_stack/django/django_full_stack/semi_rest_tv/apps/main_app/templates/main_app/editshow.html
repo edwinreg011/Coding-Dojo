@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Edit Show</title>
+</head>
+
+<body>
+  <div id='container'>
+
+    <div id='header'>
+      <h1>Tv Show {{show_view.id}}</h1>
+      <a href="/shows">Go Back</a>
+    </div>
+
+    {% if messages%}
+      {% for message in messages %}
+        <p>{{message}}</p>
+      {% endfor %}
+    {% endif %}
+
+
+    <form action="/shows/{{show_view.id}}/update" method="post">
+      {% csrf_token %}
+      <p>Title</p>
+      <input type="text" name="title" id="title" placeholder="{{show_view.title}}">
+      <p>Network</p>
+      <input type="text" name="network" id="network" placeholder="{{show_view.network}}">
+      <p>Release Date</p>
+      <input type="date" name="release_date" id="release_date" placeholder="show_view.release_date">
+      <p>Description</p>
+      <textarea name="desc" id="desc" cols="30" rows="10">{{show_view.desc}}</textarea>
+      <input type="submit" value="Update">
+    </form>
+
+    <a href="/shows/{{show_view.id}}">Go to Show</a>
+
+  </div>
+</body>
+
+</html>

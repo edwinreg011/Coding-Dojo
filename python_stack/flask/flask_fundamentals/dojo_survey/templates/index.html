@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dojo Survey</title>
+  <title>Checkerboard</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+  <div id='container'>
+    <main>
+
+      <form action="/results" method="POST">
+        <div id='content'>
+          Your Name: <input class="intake" type="text" name='name'>
+
+          <br>
+          <br>
+
+          Dojo Location:
+          <select class="intake" name='dojo'>
+            <option value="Chicago">Chicago</option>
+            <option value="Boise">Boise</option>
+            <option value="San Jose">San Jose</option>
+          </select>
+
+          <br>
+          <br>
+
+          Favorite Language:
+          <select class="intake" name='language'>
+            <option value="Python">Python</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Java">Java</option>
+          </select>
+
+          <br>
+          <br>
+
+          Comment (optional):
+          <br>
+          <br>
+          <textarea rows="8" name='comment'>
+          </textarea>
+
+          <br>
+          <br>
+
+          Gender:
+          <br>
+          <br>
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+          <input type="radio" name="gender" value="other"> Other
+          <br>
+          <br>
+
+          Preffered Communication
+          <br>
+          <br>
+          <input type="checkbox" name="comm" value="email"> Email<br>
+          <input type="checkbox" name="comm" value="Call"> Call <br>
+          <input type="checkbox" name="comm" value="text" checked> Text<br>
+
+          <button>Submit</button>
+        </div>
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>

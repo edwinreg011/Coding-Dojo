@@ -1,0 +1,11 @@
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/WizNinSam/bin/Debug/netcoreapp2.2/WizNinSam.deps.json
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/WizNinSam/bin/Debug/netcoreapp2.2/WizNinSam.runtimeconfig.json
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/WizNinSam/bin/Debug/netcoreapp2.2/WizNinSam.runtimeconfig.dev.json
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/WizNinSam/bin/Debug/netcoreapp2.2/WizNinSam.dll
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/WizNinSam/bin/Debug/netcoreapp2.2/WizNinSam.pdb
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/WizNinSam/obj/Debug/netcoreapp2.2/WizNinSam.csprojAssemblyReference.cache
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/WizNinSam/obj/Debug/netcoreapp2.2/WizNinSam.csproj.CoreCompileInputs.cache
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/WizNinSam/obj/Debug/netcoreapp2.2/WizNinSam.AssemblyInfoInputs.cache
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/WizNinSam/obj/Debug/netcoreapp2.2/WizNinSam.AssemblyInfo.cs
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/WizNinSam/obj/Debug/netcoreapp2.2/WizNinSam.dll
+/Users/edwinregalado/Desktop/CodingDojo/c#/oop/WizNinSam/obj/Debug/netcoreapp2.2/WizNinSam.pdb

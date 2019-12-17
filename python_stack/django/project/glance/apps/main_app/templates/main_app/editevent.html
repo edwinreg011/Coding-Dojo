@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Edit your Event</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id='container'>
+
+    <div class='opener'>
+      <h1>Hello, {{request.session.first_name}}!</h1>
+      <a href="/users/logout">Log Out</a>
+    </div>
+
+
+    {% if messages%}
+    {% for message in messages %}
+    <p>{{message}}</p>
+    {% endfor %}
+    {% endif %}
+
+    <form action="/users/events/update/{{event_view.id}}", method = "post">
+      {% csrf_token %}
+    <p>Title:</p>
+    <input type="text" name="title" value = "{{event_view.title}}">
+    <p>Location:</p>
+    <input type="text" name="location" value = "{{event_view.location}}">
+    <p>Date:</p>
+    <input type="date" name="event_date" id = "event_date">
+    <p>Time:</p>
+    <input type="time" name="event_time" placeholder="{{event_view.event_time}}">
+    <p>Description:</p>
+    <textarea name="desc" cols="30" rows="10">{{event_view.desc}}</textarea>
+    <br>
+    <br>
+    <input type="submit" value="Update Event">
+    </form>
+    <br>
+    <br>
+
+    <form action="/users/success">
+      {% csrf_token %}
+      <input type="submit" value='Go Back'>
+    </form>
+
+
+
+
+
+  </div>
+</body>
+
+</html>

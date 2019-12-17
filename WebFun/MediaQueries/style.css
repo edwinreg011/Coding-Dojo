@@ -1,0 +1,22 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  vertical-align: top;
+  outline: 1px dotted red;
+}
+#container{
+  width: 100%;
+  margin: 0 auto;
+}
+h1{
+  background-color: lightgray;
+  padding: 15px;
+}
+p{
+  background-color: lightgray;
+  padding: 20px;
+  font-size: 17pt;
+  margin-top: 1%;
+}
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Glance</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'main_app/css/style.css' %}">
+  <script src="{% static 'main_app/js/skycons.js' %}"></script>
+  <script src="{% static 'main_app/js/script.js' %}"></script>
+</head>
+
+<body>
+  <div id='container'>
+
+
+    <!-- GREETING HEADER -->
+
+
+    <ul class="nav">
+      <li class="nav-item">
+        <h2 class="nav-link active">Hello, {{request.session.first_name}}! Welcome to Glance!</h2>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-success" id='link' href="/users/events/new">Add Event</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-danger" id='link' href="/users/logout">Log Out</a>
+      </li>
+    </ul>
+
+    <!-- WEATHER APP -->
+
+
+    <div id = "main" class="row">
+      <div  class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <div class='location'>
+              <h1 class='tz'></h1>
+              <canvas class='icon' width="128" height="128"></canvas>
+            </div>
+            <div class="temperature">
+              <div class='degsec'>
+                <h2 class='degree'></h2>
+                <p>F °</p>
+              </div>
+              <p class='tempdesc'></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  class="table-wrapper-scroll-y my-custom-scrollbar" class="col-lg-6">
+          <h3>Here's what you've got going on today:</h3>
+          <table class="table">
+            <thead class="thead-dark">
+  
+              <tr>
+                <th scope="col">Event</th>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">Description</th>
+                <th scope="col">Location</th>
+                <th scope="col">Actions</th>
+              </tr>
+  
+            </thead>
+            {% for event in all_events_tb %}
+            {% if event.user.id == request.session.user_id %}
+            <tbody>
+            <tr>
+              <td>{{event.title}}</td>
+              <td>{{event.event_date}}</td>
+              <td>{{event.event_time}}</td>
+              <td>{{event.desc}}</td>
+              <td>{{event.location}}</td>
+              <td>
+                <a href="/users/events/{{event.id}}">View</a> |
+                <a href="/users/events/edit/{{event.id}}">Edit</a> |
+                <a href="/users/events/delete/{{event.id}}">Delete</a>
+              </td>
+            </tr>
+          </tbody>
+            {% endif %}
+            {% endfor %}
+          </table>
+        </div>
+    </div>
+
+    <!-- MONTHS EVENTS -->
+
+
+  </div>
+</body>
+
+</html>

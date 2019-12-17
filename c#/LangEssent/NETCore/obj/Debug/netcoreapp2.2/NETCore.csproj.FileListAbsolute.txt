@@ -1,0 +1,11 @@
+/Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/bin/Debug/netcoreapp2.2/NETCore.deps.json
+/Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/bin/Debug/netcoreapp2.2/NETCore.runtimeconfig.json
+/Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/bin/Debug/netcoreapp2.2/NETCore.runtimeconfig.dev.json
+/Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/bin/Debug/netcoreapp2.2/NETCore.dll
+/Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/bin/Debug/netcoreapp2.2/NETCore.pdb
+/Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/obj/Debug/netcoreapp2.2/NETCore.csprojAssemblyReference.cache
+/Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/obj/Debug/netcoreapp2.2/NETCore.csproj.CoreCompileInputs.cache
+/Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/obj/Debug/netcoreapp2.2/NETCore.AssemblyInfoInputs.cache
+/Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/obj/Debug/netcoreapp2.2/NETCore.AssemblyInfo.cs
+/Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/obj/Debug/netcoreapp2.2/NETCore.dll
+/Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/obj/Debug/netcoreapp2.2/NETCore.pdb

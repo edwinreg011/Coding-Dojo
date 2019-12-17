@@ -1,0 +1,17 @@
+<h1>Pet Shelter</h1>
+<button [routerLink]="['/']">Home</button>
+
+
+<div *ngIf="viewPet">
+    <h3>Details about {{viewPet.name}}</h3>
+    <br>
+    <h4>Description:</h4><p>{{viewPet.description}}</p>
+    <br>
+    <h4>Skills:</h4>
+    <p>{{viewPet.skill1}}</p>
+    <br>
+    <p>{{viewPet.skill2}}</p>
+    <br>
+    <p>{{viewPet.skill3}}</p>
+    <button (click)="destroyOnePet(viewPet._id)">Adopt this pet!</button>
+</div>

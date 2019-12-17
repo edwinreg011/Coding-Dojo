@@ -1,0 +1,32 @@
+*{
+  margin: 0 px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: 1px dotted red;
+}
+
+header{
+  font-size: 25pt;
+  padding: 10px;
+}
+#weatherapp{
+  display: inline-block;
+}
+.location{
+  padding: 10px;
+  align-items: center;
+}
+.icon{
+  margin-right: 23%;
+  margin-left: 23%;
+}
+.degree{
+  text-align: center;
+}
+p{
+  text-align: center;
+  font-size: 13pt;
+}
+.tempdesc{
+  text-align: center;
+}

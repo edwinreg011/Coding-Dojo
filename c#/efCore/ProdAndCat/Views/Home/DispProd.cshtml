@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using ProdAndCat.Models
+
+@model Product
+
+<h1>@Model.Name</h1>
+
+<br>
+<br>
+
+<h3>Categories</h3>
+<ul>
+@foreach(var x in @Model.Categories)
+{
+  <li>@x.Category.Name</li>
+}
+</ul>
+
+<br>
+<br>
+
+
+
+<form asp-action="AddCat" asp-controller="Home" method="post">
+<label asp-for="Name"><h4>Add Category</h4></label>
+<br>
+
+
+<input type="hidden" name="productId" value="@Model.ProductId">
+<select name="CategoryId">
+@{
+  foreach(var c in @ViewBag.NotCats)
+  {
+    <option value="@c.CategoryId">@c.Name</option>
+  }
+}
+</select>
+
+
+<br>
+<br>
+<input type="submit" value="Add" class="btn btn-success">
+</form>

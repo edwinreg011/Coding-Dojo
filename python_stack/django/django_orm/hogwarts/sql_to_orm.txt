@@ -1,0 +1,18 @@
+SQL to ORM
+
+#1
+Hogwarts.objects.create(name="Harry Potter", house="Gryffindor", pet="Hedwig", year="5")
+
+#2
+Hogwarts.objects.create(name="Hermione Granger", house="Gryffindor", pet="Crookshanks", year="5")
+
+#3
+Hogwarts.objects.get(id=1)
+
+#4
+Hogwarts.objects.filter(house='Gryffindor')
+
+#5
+c = Hogwarts.objects.get(id=1)
+c.year = 6
+c.save()

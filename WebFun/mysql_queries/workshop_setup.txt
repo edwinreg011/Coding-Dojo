@@ -1,0 +1,22 @@
+  //connect to database
+
+USE twitter;
+
+
+  //insert into database
+
+INSERT INTO tweets (tweet, user_id, created_at, updated_at)
+VALUES ("Hello!", 1, NOW(), NOW());
+
+
+  //update database
+
+UPDATE tweets 
+SET tweet = "Goodbye!"
+WHERE id = "15";
+
+
+  //delete from database
+
+DELETE FROM tweets
+WHERE id = "15";

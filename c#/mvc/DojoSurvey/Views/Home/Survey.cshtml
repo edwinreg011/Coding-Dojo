@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>View Info</title>
+</head>
+<body>
+  <h1>Survey Results</h1>
+
+  <h4>Name: </h4>
+  <p>@ViewBag.Name</p>
+  <br>
+  <br>
+  <h4>Dojo Location:</h4>
+  <p>@ViewBag.Location</p>
+  <br>
+  <br>
+  <h4>Favorite Language:</h4>
+  <p>@ViewBag.Comments</p>
+  <br>
+  <br>
+  <h6>Survey submitted on: </h6>
+  <p>@ViewBag.Date.ToString("MMM dd, yyyy | h:mm tt")</p>
+  <br>
+  <br>
+  <a href="/">Go Back</a>
+
+
+</body>
+</html>

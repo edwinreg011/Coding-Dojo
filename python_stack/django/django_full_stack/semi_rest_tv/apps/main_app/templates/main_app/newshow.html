@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Add New Show</title>
+</head>
+
+<body>
+  <div id='container'>
+
+    <div id='header'>
+      <h1>Add a New Show</h1>
+      <a href="/shows">Go Back</a>
+    </div>
+
+    {% if messages%}
+      {% for message in messages %}
+        <p>{{message}}</p>
+      {% endfor %}
+    {% endif %}
+
+    <form action="/shows/create" method="post">
+      <p>Title</p>
+      <input type="text" name="title" id="title">
+      <p>Network</p>
+      <input type="text" name="network" id="network">
+      <p>Release Date</p>
+      <input type="date" name="release_date" id="release_date">
+      <p>Description</p>
+      <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+      <input type="submit" value="Create">
+    </form>
+
+
+
+
+  </div>
+</body>
+
+</html>

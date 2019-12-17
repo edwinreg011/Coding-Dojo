@@ -1,0 +1,21 @@
+@model Wedding
+<br>
+<a asp-action="LogOut" asp-controller="Home" class="btn btn-danger">Log Out</a>
+<a asp-action="Dashboard" asp-controller="Home" class="btn btn-success">Dashboard</a>
+<br>
+<br>
+<h1>@Model.WedderOne and @Model.WedderTwo's Wedding</h1>
+<br>
+<h5>@Model.Date.ToString("MMMM, dd yyyy")</h5>
+
+<br>
+<br>
+
+<h6>Guests</h6>
+
+<ul>
+  @foreach(var x in @Model.Users)
+  {
+    <li>@x.User.FirstName @x.User.LastName</li>
+  }
+</ul>

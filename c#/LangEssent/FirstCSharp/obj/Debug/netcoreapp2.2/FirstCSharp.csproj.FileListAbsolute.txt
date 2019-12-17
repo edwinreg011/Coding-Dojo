@@ -1,0 +1,11 @@
+/Users/edwinregalado/Desktop/CodingDojo/c#/FirstCSharp/bin/Debug/netcoreapp2.2/FirstCSharp.deps.json
+/Users/edwinregalado/Desktop/CodingDojo/c#/FirstCSharp/bin/Debug/netcoreapp2.2/FirstCSharp.runtimeconfig.json
+/Users/edwinregalado/Desktop/CodingDojo/c#/FirstCSharp/bin/Debug/netcoreapp2.2/FirstCSharp.runtimeconfig.dev.json
+/Users/edwinregalado/Desktop/CodingDojo/c#/FirstCSharp/bin/Debug/netcoreapp2.2/FirstCSharp.dll
+/Users/edwinregalado/Desktop/CodingDojo/c#/FirstCSharp/bin/Debug/netcoreapp2.2/FirstCSharp.pdb
+/Users/edwinregalado/Desktop/CodingDojo/c#/FirstCSharp/obj/Debug/netcoreapp2.2/FirstCSharp.csprojAssemblyReference.cache
+/Users/edwinregalado/Desktop/CodingDojo/c#/FirstCSharp/obj/Debug/netcoreapp2.2/FirstCSharp.csproj.CoreCompileInputs.cache
+/Users/edwinregalado/Desktop/CodingDojo/c#/FirstCSharp/obj/Debug/netcoreapp2.2/FirstCSharp.AssemblyInfoInputs.cache
+/Users/edwinregalado/Desktop/CodingDojo/c#/FirstCSharp/obj/Debug/netcoreapp2.2/FirstCSharp.AssemblyInfo.cs
+/Users/edwinregalado/Desktop/CodingDojo/c#/FirstCSharp/obj/Debug/netcoreapp2.2/FirstCSharp.dll
+/Users/edwinregalado/Desktop/CodingDojo/c#/FirstCSharp/obj/Debug/netcoreapp2.2/FirstCSharp.pdb

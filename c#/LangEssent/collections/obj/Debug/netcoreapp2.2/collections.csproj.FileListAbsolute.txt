@@ -1,0 +1,11 @@
+/Users/edwinregalado/Desktop/CodingDojo/c#/collections/bin/Debug/netcoreapp2.2/collections.deps.json
+/Users/edwinregalado/Desktop/CodingDojo/c#/collections/bin/Debug/netcoreapp2.2/collections.runtimeconfig.json
+/Users/edwinregalado/Desktop/CodingDojo/c#/collections/bin/Debug/netcoreapp2.2/collections.runtimeconfig.dev.json
+/Users/edwinregalado/Desktop/CodingDojo/c#/collections/bin/Debug/netcoreapp2.2/collections.dll
+/Users/edwinregalado/Desktop/CodingDojo/c#/collections/bin/Debug/netcoreapp2.2/collections.pdb
+/Users/edwinregalado/Desktop/CodingDojo/c#/collections/obj/Debug/netcoreapp2.2/collections.csprojAssemblyReference.cache
+/Users/edwinregalado/Desktop/CodingDojo/c#/collections/obj/Debug/netcoreapp2.2/collections.csproj.CoreCompileInputs.cache
+/Users/edwinregalado/Desktop/CodingDojo/c#/collections/obj/Debug/netcoreapp2.2/collections.AssemblyInfoInputs.cache
+/Users/edwinregalado/Desktop/CodingDojo/c#/collections/obj/Debug/netcoreapp2.2/collections.AssemblyInfo.cs
+/Users/edwinregalado/Desktop/CodingDojo/c#/collections/obj/Debug/netcoreapp2.2/collections.dll
+/Users/edwinregalado/Desktop/CodingDojo/c#/collections/obj/Debug/netcoreapp2.2/collections.pdb

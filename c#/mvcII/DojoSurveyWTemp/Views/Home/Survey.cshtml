@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reuslts</title>
+</head>
+<body>
+@using DojoSurveyWTemp.Models
+@model Survey
+
+    <h1>Survey Results</h1>
+
+  <h4>Name: </h4>
+  <p>@Model.Name</p>
+  <br>
+  <br>
+  <h4>Dojo Location:</h4>
+  <p>@Model.Location</p>
+  <br>
+  <br>
+  <h4>Favorite Language:</h4>
+  <p>@Model.Language</p>
+  <br>
+  <br>
+  <h4>Comments:</h4>
+  <p>@Model.Comment</p>
+  <br>
+  <br>
+  <a href="/">Go Back</a>
+</body>
+</html>

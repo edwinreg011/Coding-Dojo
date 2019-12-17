@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model QuotingDojo.Models.Quote
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quoting Dojo</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome to Quoting Dojo!</h1>
+
+        <div asp-validation-summary="All"></div>
+
+        <form asp-action="Create" asp-controller="Home">
+            <label asp-for="Name"></label>
+            <input asp-for="Name">
+            <br>
+            <br>
+            <label asp-for="Content"></label>
+            <br>
+            <br>
+            <textarea asp-for="Content" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Add my quote">
+        </form>
+
+        <form asp-action="Quotes" asp-controller="Home">
+            <input type="submit" value="Skip to Quotes">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+1. use my_first_db
+
+2. db.createCollection("students")
+
+3 + 4. db.students.insert({name : "Edwin", home_state : "Illinois", lucky_number : "11", birthday : {month : "5", day : "24", year : "1995"}})
+db.students.insert({name : "Luna", home_state : "Illinois", lucky_number : "3", birthday : {month : "5", day : "3", year : "2016"}})
+db.students.insert({name : "John", home_state : "Kansas", lucky_number : "13", birthday : {month : "7", day : "30", year : "1971"}})
+db.students.insert({name : "Jane", home_state : "New York", lucky_number : "7", birthday : {month : "10", day : "12", year : "1984"}})
+db.students.insert({name : "Tom", home_state : "Wisconson", lucky_number : "89", birthday : {month : "3", day : "22", year : "1997"}})
+
+5. db.students.find().pretty()
+
+6. db.students.find({home_state : "California"})
+db.students.find({home_state : "Seattle"})
+
+7. db.students.find({lucky_number : {$gt: "3"}})
+db.students.find({lucky_number : {$lte: "10"}})
+db.students.find({lucky_number : {$in: [1,9]}}).pretty()
+
+8. db.students.update({name : " "}, {$set: {interests : ["coding", "brunch", "MongoDb"]}})
+
+9. db.students.update({name : "Edwin"}, {$push : {interests : "soccer"}})
+
+10. db.students.update({name : "Luna"}, {$push : {interests : "taxes"}})
+
+11. db.students.update({name : "Luna"}, {$pull : {interests : "taxes"}})
+
+12. db.students.remove({home_state : "California"})
+
+13. db.students.remove({name : "Tom"})
+
+14. db.students.remove({lucky_number : {$gt: "5"}}, true)
+
+15. db.students.update({name : " "}, {$set: {number_of_belts : "0"}})
+
+16. db.students.update({home_state : "Washington"}, {$set: {number_of_belts : "1"}})
+
+17. db.students.updateMany( {}, {$rename : {"number_of_belts" : "belts_earned"} })
+
+18. db.students.updateMany({}, {$unset : {lucky_number : ""}})
+
+//WRONG
+19. db.students.updateMany( {}, {$set: $currentDate: {updated_on : ""}})

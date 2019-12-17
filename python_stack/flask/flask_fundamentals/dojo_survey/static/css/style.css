@@ -1,0 +1,37 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  vertical-align: top;
+  /* outline: 1px dotted red; */
+  }
+main{
+  padding-right: 30%;
+  padding-left: 30%;
+}
+form{
+  margin-top: 10%;
+  font-size: 17pt;
+  padding: 20px;
+  border: 5px solid black;
+}
+.intake{
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 25%;
+}
+#content{
+  padding-left: 10px;
+}
+button{
+  height: 12%;
+  width: 20%;
+  font-size: 15pt;
+  margin-left: 79%;
+  background-color: lightblue;
+  border-radius: 20px;
+}
+textarea{
+  width: 98%;
+  font-size: 12pt;
+}

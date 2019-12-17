@@ -1,0 +1,33 @@
+//1
+
+2.2.107
+
+//2
+
+The template "Console Application" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on /Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/NETCore.csproj...
+  Restoring packages for /Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/NETCore.csproj...
+  Generating MSBuild file /Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/obj/NETCore.csproj.nuget.g.props.
+  Generating MSBuild file /Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/obj/NETCore.csproj.nuget.g.targets.
+  Restore completed in 168.91 ms for /Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/NETCore.csproj.
+
+Restore succeeded.
+
+//3
+
+Microsoft (R) Build Engine version 15.9.20+g88f5fadfbe for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 31.71 ms for /Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/NETCore.csproj.
+  NETCore -> /Users/edwinregalado/Desktop/CodingDojo/c#/NETCore/bin/Debug/netcoreapp2.2/NETCore.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+
+
+//4
+Hello World!

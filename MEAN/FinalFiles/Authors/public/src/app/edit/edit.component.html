@@ -1,0 +1,24 @@
+<button [routerLink]="['/']" >Home</button>
+
+<div *ngFor="let err of errors">
+  <p>{{err}}</p>
+</div>
+
+<form (submit)="updateAuthor()">
+  <label for="">Name: </label>
+  <input type="text" name="editAuthor.name" [(ngModel)]="editAuthor.name">
+  <br>
+  <h5>Books: (optional)</h5>
+  <br>
+  <label for="">Book One: </label>
+  <input type="text" name="editAuthor.book1" [(ngModel)]="editAuthor.book1">
+  <br>
+  <label for="">Book Two: </label>
+  <input type="text" name="editAuthor.book2" [(ngModel)]="editAuthor.book2">
+  <br>
+  <label for="">Book Three: </label>
+  <input type="text" name="editAuthor.book3" [(ngModel)]="editAuthor.book3">
+  <br>
+  <br>
+  <input type="submit" value="Edit Author">
+</form>

@@ -1,0 +1,29 @@
+@model DojoSurveyV.Models.Survey
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    <h2>Survey Results</h2>
+    <p>Name: @Model.Name</p>
+    <br>
+    <br>
+    <p>Location: @Model.Location</p>
+    <br>
+    <br>
+    <p>Favorite Language: @Model.Language</p>
+    <br>
+    <br>
+    <p>Comments: @Model.Comments</p>
+    <br>
+    <br>
+    <a asp-action="Index" asp-controller="Home">Go Home</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<Meeting>
+
+<h1>Dojo Activity Center</h1>
+<h3>Welcome @ViewBag.User.FirstName @ViewBag.User.LastName</h3>
+<a asp-action="LogOut" asp-controller="Home" class="btn btn-danger">Log Out</a>
+
+<br>
+<br>
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>Activity</th>
+            <th>Date and Time</th>
+            <th>Duration</th>
+            <th>Event Coordinator</th>
+            <th>No. of Participants</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var meet in @Model)
+        {
+        <tr>
+            <td><a asp-action="ViewActivity" asp-controller="Home" asp-route-meetingId="@meet.MeetingId">@meet.Name</a></td>
+            <td>@meet.Date.ToString("MMMM dd, yyyy") <br> at @meet.Time.ToString("hh:mm tt")</td>
+            <td>@meet.Duration</td>
+            <td>@meet.Planner.FirstName</td>
+            <td>@meet.ComingList.Count</td>
+            @if(ViewBag.User.UserId == meet.UserId)
+            {
+                <td><a class="btn btn-warning"asp-route-meetingId="@meet.MeetingId" asp-action="Destroy" asp-controller="Home">Delete</a></td>
+            }
+            else
+            {
+                @if(meet.ComingList.All(r=>r.UserId != @ViewBag.User.UserId))
+                {
+                    <td><a class="btn btn-success"asp-action="JoinLeave" asp-controller="Home" asp-route-meetingId="@meet.MeetingId" asp-route-userId="@ViewBag.User.UserId" asp-route-status="add" >Join</a></td>
+                }
+                @if(meet.ComingList.Any(r=>r.UserId == @ViewBag.User.UserId))
+                {
+                    <td><a class="btn btn-danger"asp-action="JoinLeave" asp-controller="Home" asp-route-meetingId="@meet.MeetingId" asp-route-userId="@ViewBag.User.UserId" asp-route-status="remove">Leave</a></td>
+                }
+            }
+        </tr>
+        }
+    </tbody>
+</table>
+
+<br>
+<br>
+
+<a asp-action="AddMeeting" asp-controller="Home" class="btn btn-success">Add New Activity</a>

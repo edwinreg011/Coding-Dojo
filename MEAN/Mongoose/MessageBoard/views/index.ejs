@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dojo Message Board</title>
+</head>
+<body>
+  <h3>Create a message</h3>
+  <form action="/messages" method="post">
+    <label for="name">Name: </label>
+    <br>
+    <input type="text" name="name">
+    <br>
+    <br>
+    <label for="post">Message: </label>
+    <br>
+    <input type="text" name="post">
+    <br>
+    <br>
+    <input type="submit" value="Post Message">
+  </form>
+
+  <br>
+  <h2>Message Board</h2>
+
+
+  <% for(var m of allMessages) { %>
+    <p>Name: <%= m.name %></p>
+    <p>Message: </p>
+    <p><%= m.post %></p>
+    <h5>Comments</h5>
+
+
+    <% for(var c of m.comments) { %>
+      <p><%= c.name %></p>
+      <p><%= c.content %></p>
+    <% } %>
+
+
+    <h5>Post a comment</h5>
+    <form action="/comments/<%= m._id %>" method="post">
+      <label for="name">Name: </label>
+      <input type="text" name="name">
+      <br>
+      <br>
+      <label for="content">Comment: </label>
+      <input type="text" name="content">
+      <br>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+    <hr>
+  <% } %>
+</body>
+</html>

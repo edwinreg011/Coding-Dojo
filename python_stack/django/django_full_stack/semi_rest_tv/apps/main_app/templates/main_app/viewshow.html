@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>View Show</title>
+</head>
+<body>
+  <div id='container'>
+
+    <div id='header'>
+      <h1>Tv Show {{show_view.id}}</h1>
+      <a href="/shows">Go Back</a>
+    </div>
+
+    <main>
+      <p>Title: {{ show_view.title }}</p>
+      <p>Network: {{show_view.network}}</p>
+      <p>Release Date: {{release_date_view}}</p>
+      <p>Description: {{show_view.desc}}</p>
+    </main>
+
+
+    <div id='footer'>
+      <p>Last Updated: {{show_view.updated_at}} </p>
+      <p><a href="shows/{{show_view.id}}/edit">Edit</a> | <a href="shows/{{show_view.id}}/destroy">Delete</a></p>
+    </div>
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+  background-color: black;
+  margin: 0px;
+}
+#world{
+  position: relative;
+}
+.brick{
+  width: 20px;
+  height: 20px;
+  /* border: 1px solid black; */
+  display: inline-block;
+  background-color: blue; 
+}
+.coin{
+  width: 20px;
+  height: 20px;
+  /* border: 1px solid black; */
+  display:  inline-block;
+  background: url("./coin.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#pacman{
+  width: 20px;
+  height: 20px;
+  display:  inline-block;
+  background: url("./pacman.gif");
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover; 
+  position: absolute;
+}
+.empty{
+  width: 20px;
+  height: 20px;
+  /* border: 1px solid black; */
+  display: inline-block;
+}

@@ -1,0 +1,27 @@
+.btn-outline-success {
+  color: #28a745;
+  border-color: #28a745;
+}
+.navbar-brand{
+  font-size: 30pt;
+  margin-right: 8%;
+}
+#list{
+  padding-right: 10%;
+}
+.btn-group-lg>.btn, .btn-lg{
+  margin-top: 3%;
+}
+.lead{
+  margin-top: 3%;
+}
+form{
+  padding:15px;
+}
+h2{
+  margin-bottom: 33px;
+}
+.row{
+  margin-right: 0px;
+  margin-left: 0px;
+}

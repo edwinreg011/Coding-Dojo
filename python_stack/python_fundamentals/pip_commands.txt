@@ -1,0 +1,48 @@
+//pip list
+
+this command list the current version of pip installed in your terminal along with any packages that our active in the current virtual enviorment.
+
+
+//deactivate
+
+this command in your virtual enviorment would close the enviorment and return you to the original terminal.
+
+
+//pip3 list
+
+with this command it appears that the current version of pip is listed but the packages added into the virtual enviorments are not listed. 
+
+
+//source djangoVenv/bin/activate
+
+this activates the listed virtual enviorment in your terminal
+
+
+//pip install django=1.11.9
+
+this command would install the listed package but being that we have already installed django into the enviorment the out put stated that the "requierment already satisfied".
+
+
+//pip freeze 
+
+simillar to pip list, pip freeze does list the current packages active in the enviorment but the current version of pip is not listed and it is also formatted slightly different than in the output provided with pip list. 
+
+
+//pip freeze > requierments.txt
+
+when i ls it appears that a new file has been created with the name reqierments.txt. When opened it is ust an empty text file. 
+
+
+//pip uninstall django
+
+the initiall out put shows us what files would be removed and from where they are being removed. then we are prompted with a "y/n?" to confirm the uninstall. 
+
+
+//pip show django
+
+if installed this command will provide you with a description of the program along with the authors contact information. other information included is the location of the file on the machine. 
+
+
+//pip search flask 
+
+this command will provide you with all available packages with the key word "flask" that can be installed into your virtual enviorment. 

@@ -1,0 +1,33 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  vertical-align: top;
+  /* outline: 1px dotted red; */
+}
+#container{
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+h1{
+  margin-left: 19.5%;
+  margin-right: 19.5%;
+  border: 1px solid black;
+  padding: 5px;
+  font-weight: normal;
+}
+#display{
+  border: 1px solid black;
+  padding: 20px;
+}
+.date{
+  font-size: 40pt;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+.time{
+  font-size: 36pt;
+  margin-right: 32%;
+  margin-left: 32%;
+}

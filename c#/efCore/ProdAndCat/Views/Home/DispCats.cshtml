@@ -1,0 +1,36 @@
+@using ProdAndCat.Models
+
+@model Category
+
+<h1>@Model.Name</h1>
+
+<br>
+<br>
+
+<h3>Products</h3>
+<ul>
+  @foreach(var y in @Model.Products)
+  {
+    <li>@y.Product.Name</li>
+  }
+</ul>
+
+<br>
+<br>
+
+<form asp-action="AddProd" asp-controller="Home" method="post">
+  <label asp-for="Name">Add Product</label>
+  <br>
+  <input type="hidden" name = "categoryId" value="@Model.CategoryId">
+  <select name="ProductId">
+    @{
+      foreach(var p in @ViewBag.NotProd)
+      {
+        <option value="@p.ProductId">@p.Name</option>
+      }
+    }
+  </select>
+  <br>
+  <br>
+  <input type="submit" value = "Add" class="btn btn-success">
+</form>

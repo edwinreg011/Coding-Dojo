@@ -1,0 +1,42 @@
+<h1>Pet Shelter</h1>
+<h4>Know of a pet needing a home?</h4>
+<button [routerLink]="['/']">Go Back</button>
+
+<div *ngFor="let err of errors">
+  <p>{{err}}</p>
+</div>
+
+<br>
+
+<form (submit)="createPet()">
+  <br>
+  <label>Pet name: </label>
+  <input type="text" name="newPet.name" [(ngModel)]="newPet.name">
+  <br>
+  <br>
+  <label>Pet type: </label>
+  <input type="text" name="newPet.type" [(ngModel)]="newPet.type">
+  <br>
+  <br>
+  <label>Description: </label>
+  <input type="text" name="newPet.description" [(ngModel)]="newPet.description">
+  <br>
+  <br>
+  <h5>Skills: </h5>
+  <label>Skill 1: </label>
+  <input type="text" name="newPet.skill1" [(ngModel)]="newPet.skill1">
+  <br>
+  <br>
+  <label>Skill 2: </label>
+  <input type="text" name="newPet.skill2" [(ngModel)]="newPet.skill2">
+  <br>
+  <br>
+  <label>Skill 3: </label>
+  <input type="text" name="newPet.skill3" [(ngModel)]="newPet.skill3">
+  <br>
+  <br>
+  <input type="submit" value="Add Pet">
+  <br>
+  <br>
+  <button [routerLink]="['/']">Cancel</button>
+</form>

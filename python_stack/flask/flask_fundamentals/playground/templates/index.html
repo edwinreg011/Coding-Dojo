@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  *{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  vertical-align: top;
+  /* outline: 1px dotted red; */
+  }
+
+  h1{
+    margin-left: 45%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  #box{
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    display: inline-block;
+    border: 10px solid black;
+    margin-left: 80px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  </style>
+</head>
+<body>
+<div id='container'>
+
+  <header>
+    <h1>Welcome!</h1>
+  </header>
+
+  <main>
+    {% for i in range (0, number)%}
+    <div id = "box" style = background-color:{{ input }}></div>
+    {% endfor %}
+  </main>
+
+
+</div>
+</body>
+</html>

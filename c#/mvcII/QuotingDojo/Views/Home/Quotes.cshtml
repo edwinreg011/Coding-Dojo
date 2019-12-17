@@ -1,0 +1,38 @@
+@model QuotingDojo.Models.Quote
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quoting Dojo</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Here are the awesome quotes</h1>
+
+        <table>
+          <thead>
+            <tbody>
+              @foreach (var quote in ViewBag.info)
+                {
+                  <tr>
+                    <td> <h3>@quote["Content"]</h3> </td>
+                  </tr>
+                  <tr>
+                    <td>posted by @quote["Name"] on @Convert.ToDateTime(quote["created_at"]).ToString("d") </td>
+                  </tr>
+                }
+              
+            </tbody>
+          </thead>
+        </table>
+        <br>
+        <br>
+        <form asp-action="Index" asp-controller="Home">
+            <input type="submit" value="Add Quote">
+        </form>
+
+    </div>
+</body>
+</html>

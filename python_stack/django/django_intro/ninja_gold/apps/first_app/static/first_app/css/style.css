@@ -1,0 +1,57 @@
+*{
+  margin: 0px;
+  padding: 20px;
+  box-sizing: border-box;
+  vertical-align: top;
+  /* outline: 1px dotted red; */
+}
+header{
+  text-align: center;
+  display: inline-block;
+  padding: 0px;
+  height: 35px;
+}
+#my_gold{
+  font-size: 21.5pt;
+  border: 2px solid black;
+  width: 245px;
+  margin-left: 0px;
+}
+#row{
+  text-align: center;
+  margin-top: 1%;
+}
+#location{
+  display: inline-block;
+  text-align: center;
+  border: 2px solid black;
+  width: 20%;
+  margin-left: 50px;
+}
+#reset{
+  text-align: center;
+}
+p{
+  display: inline-block;
+  padding: 0px;
+  font-size: 15pt;
+}
+
+input{
+  font-size: 20pt;
+  padding: 5px;
+}
+li{
+  list-style-type: none;
+}
+#log{
+  border: 2px solid black;
+  height: 300px;
+  overflow: scroll;
+}
+.red{
+  color:red;
+}
+.green{
+  color: green;
+}

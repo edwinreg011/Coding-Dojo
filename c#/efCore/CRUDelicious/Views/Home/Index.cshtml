@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using CRUDelicious.Models
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a asp-action="AddDish">Add a Dish</a>
+    <table>
+        <th><h1>Check out some recent dishes!</h1></th>
+        @model List<Dish>
+            @foreach(var d in @Model)
+            {
+        <tr>
+                <td><a asp-action="ViewDish" asp-route-dish_id="@d.DishId" asp-controller="Home">@d.Name</a> by @d.Chef</td>
+        </tr>
+            }
+    </table>
+</body>
+</html>
